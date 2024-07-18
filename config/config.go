@@ -17,7 +17,8 @@ type GitHubConfig struct {
 // }
 
 type Config struct {
-	TigerPawUser string
+
+TigerPawUser string
     GitHub    GitHubConfig
     DebugMode bool
     UserRoles []string
