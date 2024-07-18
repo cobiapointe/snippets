@@ -17,8 +17,7 @@ type GitHubConfig struct {
 // }
 
 type Config struct {
-
-TigerPawUser string
+	TigerPawUser string
     GitHub    GitHubConfig
     DebugMode bool
     UserRoles []string
@@ -33,9 +32,9 @@ func New() *Config {
 	    Username: getEnv("GITHUB_USERNAME", ""),
 	    APIKey:   getEnv("GITHUB_API_KEY", ""),
 	},
-	DebugMode: getEnvAsBool("DEBUG_MODE", true),
+//	DebugMode: getEnvAsBool("DEBUG_MODE", true),
 	UserRoles: getEnvAsSlice("USER_ROLES", []string{"admin"}, ","),
-	MaxUsers:  getEnvAsInt("MAX_USERS", 1),
+//	MaxUsers:  getEnvAsInt("MAX_USERS", 1),
     }
 }
 
